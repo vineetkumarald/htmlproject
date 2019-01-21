@@ -16,7 +16,553 @@
 
 
      body
+     {<!DOCTYPE html>
+<html>
+<head>
+ 	<meta http-equiv="refresh" content="2">
+</head>
+<body>
+
+ <style type="text/css">
+ 	
+   *{
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+     font-family: sans-serif;
+    }
+
+
+
+     body
      {
+      width: 100%;
+      height: 100%;
+      background:;
+      background-size: contain;
+      background-color: black; 
+     }
+
+     .navmain
+     {
+      position: absolute;
+      width: 99%;
+      height:80px;
+      background: black;
+      top:10px;
+      left:50%;
+      right: 50%;
+      transform: translateX(-50%);
+      border: 10px solid black;
+      box-sizing: border-box;
+      border-style: inset;
+      }
+
+      .maindiv
+      {
+        position: relative;
+        width: 100px;
+        height: 100%;
+        box-sizing: border-box;
+        float: left;
+        background: red;
+        color: white;
+        text-align: center;
+        padding-top: 20px;
+        font-weight: bold;
+        font-size: 20px;
+        font-family: sans-serif;
+        transition: 0.3s;
+
+
+  
+      }
+
+      .maindiv:hover
+      {
+        background:darkseagreen;
+        height: 70px;
+        transform: translateY(-5px);
+      }
+
+      
+      .body
+      {
+      position: absolute;
+      width: 99%;
+      height:70%;
+      background: none;
+      top:95px;
+      left:50%;
+      right: 50%;
+      transform: translateX(-50%);
+      
+      box-sizing: border-box;
+    
+      }
+
+     .bodyleft
+     {
+      position: absolute;
+      width: 50%;
+      height:100%;
+      background: none;
+      display: block;
+      left:0%;
+      box-sizing: border-box;
+     }
+
+
+     .bodyright
+     {
+      position: absolute;
+      width: 50%;
+      height:100%;
+      background:none;
+      
+      right:0%;
+      box-sizing: border-box;
+     }
+
+
+
+      .footer
+      {
+      position: absolute;
+      width: 76%;
+      height:10%;
+      background:#32333b;
+      top:100%;
+      left:50%;
+      right:50%;
+      transform: translateX(-50%);
+      box-sizing: border-box;
+      border-radius: 10px;
+      text-align: center;
+      color: white;
+      font-size: 20px;
+      font-family: sans-serif;
+      line-height: 70px;
+
+      }
+
+
+      .footer:hover
+      {
+        background: rgb(30,30,30);
+      }
+
+
+
+    
+       .bodyleft h1
+       {   position: relative;
+           left: 120px;
+           color: rgb(200,200,200);
+           font-family: sans-serif;
+           margin-top:70px;
+
+       }
+       
+        .bodyleft h2
+       {   position: relative;
+           left: 120px;
+           color:white;
+           font-family: sans-serif;
+           font-size: 60px;
+           margin-top:10px;
+           margin-bottom:20px;
+       }
+
+
+      .bodyleft label
+      { position: relative;
+        
+        left: 120px;
+        color: rgb(200,200,200);
+
+      }
+
+
+       .bodyleft input
+       {
+        position:relative;
+        width:350px;
+        height: 50px;
+        border:none;
+        border-radius: 5px;
+        outline: none;
+        left:120px;
+        margin-bottom: 20px;
+        margin-top: 8px;
+        box-sizing: border-box;
+        padding-left: 30px;
+        font-size: 20px;
+
+       }
+
+       
+       .bodyleft input:focus
+       {
+        border:3px solid grey;
+       }
+
+       .bodyleft input:hover
+       {
+        background: lightgrey;
+       }
+
+
+
+
+    
+     .bodyleftbtn
+     {
+      background: #47cf73;
+      width: 80px;
+      height: 45px;
+      outline: none;
+      border:none;
+      border-radius: 3px;
+      font-size: 15px;
+      position: relative;
+      left: 120px;
+      margin-top: 10px;
+
+     }
+
+      .bodyleftbtn:hover
+      {
+        background: #2fb45a;
+      }
+
+      .bodyleftspan
+      {
+        color: rgb(200,200,200);
+        position: relative;
+        left: 150px;
+
+      }
+
+
+      .bodyleftspan:hover
+      {
+        color: white;
+      }
+
+
+       .linefirst
+        { position: absolute;
+          width:4px;
+          height: 100px;
+          background:#ccffff;
+          left: 15px;
+          top:150px;
+        }
+
+        .box
+        {
+         width: 60px;
+         height: 60px;
+         border:4px solid #ccffff;
+         position: absolute;
+         left: -12px;
+         background: none;
+         top:260px;
+         border-radius: 10px;
+         color:#ccffff;
+         text-align: center;
+         line-height: 50px;
+         font-size: 24px;
+         font-weight: bold;
+         box-sizing: border-box;
+        }
+
+        .linesecond
+        {
+          position: absolute;
+          width:4px;
+          height: 100px;
+          background:#ccffff;
+          left: 15px;
+          top:330px;
+        }
+
+
+
+
+
+        
+ </style>
+
+  <nav class="navmain">
+     
+    <div class="maindiv" style="letter-spacing: 10px;width: 200px;background: tomato">Letsee</div>
+    <div class="maindiv">WHY</div>
+    <div class="maindiv">RANK</div>
+    <div class="maindiv" style="float:right">HELP</div>
+
+
+  </nav>
+  <div class="body">
+
+
+
+
+
+    
+    <div class="bodyleft">
+      
+        <h1>LETSEE</h1>
+        <h2>Log in!</h2>
+        <label>USERNAME OR EMAIL</label>
+        <br>
+        <input type="email" name="" id="email">
+        <br>
+        <label>PASSWORD</label>
+        <br>
+        <input type="password" name="" id="password">
+        <br>
+        <button class="bodyleftbtn" onclick="login()">Log in</button>
+        <span class="bodyleftspan">Forgot Password?</span>
+
+
+    </div>
+      <!-- bodyleft -->
+
+	
+ 
+  <style>
+       .signup{
+       	width:60%;
+       	height:98%;
+       	position:absolute;
+       	top:0px;
+       	left:33%;
+       	background:black;
+       }
+       .firstname{
+       	position: absolute;
+       	top: 22%;
+       	border:none;
+       	height: 45px;
+       	width: 180px;
+       	border-radius: 5px;
+       	font-size: 12px;
+       }
+       .lastname{
+       	position: absolute;
+       	border:none;
+       	left: 50%;
+       	top: 22%;
+       	height: 45px;
+       	width: 180px;
+       	border-radius: 5px;
+       	font-size: 12px;
+       }
+       .mobilenum{
+       	position: absolute;
+       	border:none;
+       	height: 45px;
+       	width: 180px;
+       	top:37%;
+       	border-radius: 5px;
+       	font-size: 12px;
+       }
+       .email{
+       	position: absolute;
+       	border:none;
+       	height: 45px;
+       	width: 180px;
+       	left: 50%;
+       	top: 37%;
+       	border-radius: 5px;
+       	font-size: 12px;
+       }
+       .birthday{
+       	color: white;
+       	position: absolute;
+       	top: 48%;
+       	font-size: 20px;
+       }
+       .day{
+       	position: absolute;
+       	border:none;
+       	top: 54%;
+       	height: 25px;
+       	border-radius: 5px;
+       }
+       .month{
+       	border:none;
+       	position: absolute;
+       	left:10%;
+       	top: 54%;
+       	height: 25px;
+       	border-radius: 5px;
+       }
+       .year{
+       	border:none;
+       	position: absolute;
+       	left:31%;
+       	top: 54%;
+       	height: 25px;
+       	border-radius: 5px;
+       }
+       .MALE{
+       	position: absolute;
+       	top: 63%;
+       }
+ 		.FEMALE{
+ 			position: absolute;
+ 			top: 68%;
+ 		}
+ 		.signbutton{
+ 			position: absolute;
+ 			top: 82%;
+ 			border:none;
+ 			height: 40px;
+ 			width: 70px;
+ 			border-radius: 7px;
+ 			background:#47cf73;
+ 		}
+
+
+   </style>
+
+
+
+
+
+
+
+
+
+    <div class="bodyright">
+    	<div class="signup">
+    		<h3 style="color:white;font-size:"><span style="font-size:25px">Don't have an account?</span></h3>
+			<h2 style="color: white;font-size:45px;">SIGN UP</h2>
+			<form>
+				<br><input type="text" name="firstname" maxlength="100" class="firstname" placeholder=" FIRST NAME"><br>
+				<br><input type="text" name="lastname" maxlength="100"class="lastname" placeholder=" LAST NAME"><br>
+				<br><input type="text" name="mobilenum" maxlength="10" placeholder=" MOBILE NUMBER" class="mobilenum"><br>
+				<input type="email" name="email" placeholder=" EMAIL ID" class="email"><br>
+				<span class="birthday">Birthday</span><br>
+				<select class="day">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+				</select>
+				<select class="month">
+					<option value="January">January</option>
+					<option value="February">February</option>
+					<option value="March">March</option>
+					<option value="April">April</option>
+				</select>
+				<select class="year">
+					<option value="1998">1998</option>
+					<option value="1999">1999</option>
+					<option value="2000">2000</option>
+					<option value="2001">2001</option>
+				</select>
+				<input type="radio" name="Gender" value="MALE" class="MALE"><span style="position: absolute;top:63%;left: 4%;color: white;">MALE</span><br>
+				<input type="radio" name="Gender" value="FEMALE" class="FEMALE"><span style="position: absolute;top: 68%;left: 4%;color: white;">FEMALE</span>
+				<span style="color: white;position: absolute;top: 73%;font-size: 12px;">By clicking Sign Up, you agree to our Terms, Data Policy and Cookie Policy. You may receive SMS notifications from us and can opt out at any time.</span>
+
+			</form>
+			<button class="signbutton"><span style="font-size: 19px;">Sign Up</span></button>
+
+		</div>
+    
+
+      <div class="linefirst"></div>
+      
+      <div class="box">OR</div>
+     
+      <div class="linesecond"></div>
+
+
+
+
+
+
+    </div>
+          
+         <!-- bodyright -->
+
+
+
+ <div class="footer">
+  <pre style="font-family: sans-serif;"> Any suggestions!  Free of cost</pre>
+ </div>
+
+      <!-- footer -->
+
+ <style type="text/css">
+   
+   #show
+   {
+      display: none;
+      position: absolute;
+      background: yellow;     /*for only div hidden*/
+      width: 400px;
+      height: 500px;
+
+   }
+
+ </style>
+   <div id="show">
+    
+     <p>welcome</p> 
+
+  </div>
+
+
+
+
+  <script type="text/javascript">
+    
+
+    function login()
+    {
+
+      var email=document.getElementById('email').value;
+      var password=document.getElementById('password').value;
+
+      var show=document.getElementById('show');
+
+       if(email=="iit2018000"&&password=="letsee")
+        
+         {
+        
+            show.style.display="block";
+
+
+         }
+
+    
+
+  
+
+    }
+
+
+
+
+  </script>
+
+
+
+
+
+
+
+
+
+
+ 
+</body>
+</html>
       width: 100%;
       height: 100%;
       background: url(a1.jpg);
